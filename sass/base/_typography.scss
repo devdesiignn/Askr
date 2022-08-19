@@ -1,0 +1,58 @@
+%heading {
+  font-family: $font-display;
+  color: $black;
+  line-height: 1;
+}
+
+.heading-1 {
+  @extend %heading;
+  font-size: 3.6rem;
+  font-weight: 800;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.heading-2 {
+  @extend %heading;
+  font-size: 2.8rem;
+  font-weight: 700;
+
+  &--white {
+    color: $white;
+  }
+}
+.heading-3 {
+  @extend %heading;
+  font-size: 2rem;
+  font-weight: 600;
+
+  &--white {
+    color: $white;
+  }
+}
+.paragraph {
+  font-size: 1.4rem;
+
+  &--white {
+    color: $white;
+  }
+}
+
+.paragraph-2 {
+  font-size: 1.8rem;
+  font-weight: 300;
+
+  &--white {
+    color: $white;
+  }
+}
+.tip {
+  display: block;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: $gray-dark;
+  text-transform: uppercase;
+  margin-top: 1rem;
+}

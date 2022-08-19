@@ -1,0 +1,5 @@
+css/*.css.map
+css/*.css
+!css/style.css
+!css/style.min.css
+node_modules/

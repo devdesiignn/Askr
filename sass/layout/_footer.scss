@@ -1,0 +1,86 @@
+.footer {
+  background-color: $primary-dark;
+  padding: 2rem 4rem;
+
+  @include viewport(phone) {
+    padding: 4rem;
+  }
+
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+
+    padding: 2rem;
+
+    padding-bottom: 4rem;
+    border-bottom: 1px solid rgba($white, 0.2);
+
+    @include viewport(tabd) {
+      justify-content: flex;
+      flex-wrap: wrap;
+    }
+
+    .about-us {
+      flex-basis: 60%;
+
+      @include viewport(tabp) {
+        flex-basis: 100%;
+      }
+    }
+    .contact-us {
+      @include viewport(tabp) {
+        flex-basis: 100%;
+        padding: 0;
+      }
+    }
+
+    .social {
+      list-style-type: none;
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      a:link,
+      a:visited {
+        color: $white;
+        text-decoration: none;
+        font-weight: 300;
+        transition: all 0.4s;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 2rem;
+    flex-wrap: wrap;
+
+    @include viewport(bigs) {
+      justify-content: space-around;
+    }
+    @include viewport(tabd) {
+      justify-content: space-between;
+    }
+
+    @include viewport(phone) {
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    .dev-note {
+      color: $white;
+      font-weight: 300;
+      font-size: 1.4rem;
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.card {
+  border-radius: 8px;
+  padding: 4rem 2rem;
+  background-color: #fff;
+  box-shadow: 0 1rem 2rem rgba($black, 0.2);
+
+  &__icon {
+    width: 8rem;
+    height: 8rem;
+    display: inline-block;
+
+    &--1 {
+      fill: $primary;
+    }
+    &--2 {
+      fill: $pink-2;
+    }
+    &--3 {
+      fill: $purple-2;
+    }
+  }
+}

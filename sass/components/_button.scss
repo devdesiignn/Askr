@@ -1,0 +1,100 @@
+.btn {
+  &:link,
+  &:visited {
+    border-radius: 10rem;
+    padding: 1.5rem 4rem;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    text-decoration: none;
+
+    font-family: $font-display;
+    font-weight: 700;
+    letter-spacing: 1px;
+    display: inline-block;
+  }
+
+  border: 0;
+  border-radius: 10rem;
+  padding: 1.5rem 4rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-decoration: none;
+
+  font-family: $font-display;
+  font-weight: 700;
+  letter-spacing: 1px;
+  display: inline-block;
+
+  transition: all 0.4s;
+
+  box-shadow: 0 1rem 2rem rgba($black, 0.4);
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 1rem 4rem rgba($black, 0.4);
+  }
+
+  &:active {
+    transform: translateY(2px);
+    box-shadow: 0 1rem 2rem rgba($black, 0.4);
+  }
+
+  &--main {
+    color: $white;
+    background-image: linear-gradient(135deg, $pink-2 0%, $purple-2 80%);
+
+    box-shadow: 0 1rem 2rem rgba($black, 0.4);
+
+    &:hover {
+      background-image: linear-gradient(-135deg, $pink-2 0%, $purple-2 80%);
+    }
+  }
+
+  &--purple {
+    border: 2px solid $purple-2;
+    color: $purple-2;
+    background-color: $white;
+
+    &:hover {
+      border: 2px solid $purple-2;
+      color: $white;
+      background-color: $purple-2;
+    }
+  }
+
+  &--white {
+    border: 2px solid $white;
+    color: $white;
+    background-color: $primary-dark;
+
+    &:hover {
+      border: 2px solid $white;
+      color: $primary-dark;
+      background-color: $white;
+    }
+  }
+}
+
+.text-btn {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: inherit;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  &--main {
+    color: $primary;
+  }
+  &--pink {
+    color: $pink-2;
+  }
+  &--purple {
+    color: $purple-2;
+  }
+}

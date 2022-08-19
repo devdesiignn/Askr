@@ -1,0 +1,25 @@
+@mixin viewport($size) {
+  @if $size == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  @if $size == tabp {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  @if $size == tabd {
+    @media only screen and (max-width: 75em) {
+      @content;
+    }
+  }
+
+  @if $size == bigs {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+    }
+  }
+}

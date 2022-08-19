@@ -1,0 +1,70 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 8rem;
+
+  @include viewport(phone) {
+    padding: 0 4rem;
+  }
+
+  background-color: $white-2;
+
+  position: sticky;
+  z-index: 3;
+  top: 0%;
+
+  &__logo {
+    fill: $black;
+  }
+
+  &__nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2.4rem;
+
+    @include viewport(tabd) {
+      gap: 3.6rem;
+    }
+  }
+
+  &__nav-link {
+    &:link,
+    &:visited {
+      font-family: $font-display;
+      font-weight: 600;
+      text-decoration: none;
+      color: $gray-dark;
+      display: inline-block;
+      padding: 1.5rem 1rem;
+    }
+
+    &:hover {
+      color: $primary;
+    }
+
+    &--active {
+      color: $primary !important;
+    }
+  }
+
+  &__nav-search-icon {
+    fill: $gray-dark;
+    cursor: pointer;
+  }
+
+  .desktop {
+    @include viewport(tabp) {
+      display: none;
+    }
+  }
+
+  .mobile {
+    display: none;
+
+    @include viewport(tabp) {
+      display: block;
+    }
+  }
+}

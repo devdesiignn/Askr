@@ -1,0 +1,41 @@
+.header {
+  padding: 4rem 8rem 24rem;
+
+  @include viewport(phone) {
+    padding: 8rem 4rem 32rem;
+  }
+
+  background-color: $white-2;
+  background-image: url("../img/curves/header-btm.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  &__hero {
+    display: flex;
+    align-items: center;
+    gap: 8rem;
+
+    @include viewport(tabp) {
+      justify-items: center;
+      flex-wrap: wrap;
+    }
+
+    animation: slideInUp 3s ease 1s;
+  }
+
+  &__img-box {
+    overflow: hidden;
+    width: 80%;
+    margin: 0 auto;
+
+    @include viewport(bigs) {
+      max-width: 40%;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+  }
+}
